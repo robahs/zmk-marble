@@ -20,8 +20,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: marble_left
+    shield: marble_left nice_view
   - board: nice_nano_v2
-    shield: marble_right
+    shield: marble_right nice_view
   - board: nice_nano_v2
     shield: settings_reset
