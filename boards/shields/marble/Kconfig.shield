@@ -1,0 +1,5 @@
+config SHIELD_MARBLE_RIGHT
+    def_bool $(shields_list_contains,marble_right)
+
+config SHIELD_MARBLE_LEFT
+    def_bool $(shields_list_contains,marble_left)

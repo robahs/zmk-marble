@@ -1,0 +1,12 @@
+file_format: "1"
+id: marble
+name: Marmortastatur
+type: shield
+url: https://github.com/robahs/zmk-marble/
+requires: [pro_micro]
+features:
+  - keys
+  - display
+siblings:
+  - marble_right
+  - marble_left
