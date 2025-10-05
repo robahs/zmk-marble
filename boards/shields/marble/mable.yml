@@ -3,7 +3,9 @@ id: marble
 name: Marmortastatur
 type: shield
 url: https://github.com/robahs/zmk-marble/
-requires: [pro_micro]
+requires: 
+  - [pro_micro]
+  - [i2c_oled]
 features:
   - keys
   - display
