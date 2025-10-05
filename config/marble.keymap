@@ -100,6 +100,14 @@
     keymap {
         compatible = "zmk,keymap";
 
+        layer_1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans                  &trans  &trans
+            >;
         CMAK {
             bindings = <
 &kp TAB         &kp Q  &kp W           &kp F            &kp P           &kp B      &kp ESC    &kp RA(Q)  &kp J       &kp L      &kp U      &kp Y      &kp SEMI  &kp BSLH
@@ -112,14 +120,6 @@
             label = "CMAK";
         };
 
-        layer_1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans                  &trans  &trans
-            >;
         };
     };
 };
