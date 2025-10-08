@@ -75,11 +75,11 @@
 
         CMAK {
             bindings = <
-&kp TAB         &kp Q  &kp W             &kp F              &kp P      &kp B      &kp ESC    &kp RA(Q)  &kp J         &kp L      &kp U           &kp Y            &kp SEMI  &kp BSLH
-&kp BACKSPACE   &kp A  &kp R             &kp S              &kp T      &kp G      &kp RA(P)  &kp RA(W)  &kp M         &kp N      &kp E           &kp I            &kp O     &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X             &kp C              &kp D      &kp V                            &kp K         &kp H      &kp COMMA       &kp DOT          &kp FSLH  &kp RIGHT_SHIFT
-                       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 1      &kp SPACE  &kp BSPC   &kp DEL    &kp RETURN    &mo 2      &kp LEFT_BRACE  &kp RIGHT_BRACE
-                                                            &kp LCTRL  &kp LALT                         &kp LEFT_GUI  &kp COMMA
+&kp TAB        &kp Q  &kp W             &kp F              &kp P         &kp B           &kp ESC    &kp RA(Q)  &kp J            &kp L          &kp U           &kp Y            &kp SEMI  &kp BSLH
+&kp BACKSPACE  &kp A  &kp R             &kp S              &kp T         &kp G           &kp RA(P)  &kp RA(W)  &kp M            &kp N          &kp E           &kp I            &kp O     &kp SQT
+&kp LCTRL      &kp Z  &kp X             &kp C              &kp D         &kp V                                 &kp K            &kp H          &kp COMMA       &kp DOT          &kp FSLH  &kp RIGHT_SHIFT
+                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 1         &kp SPACE       &kp BSPC   &kp DEL    &kp RETURN       &mo 2          &kp LEFT_BRACE  &kp RIGHT_BRACE
+                                                           &kp LEFT_ALT  &kp LEFT_SHIFT                        &kp RIGHT_SHIFT  &kp RIGHT_GUI
             >;
 
             label = "CMAK";
@@ -93,6 +93,8 @@
                      &trans       &trans    &trans      &trans       &trans  &trans  &trans     &trans         &trans        &trans
                                             &trans      &trans                       &trans     &trans
             >;
+
+            label = "LWR";
         };
 
         RSE {
@@ -103,6 +105,8 @@
                  &trans   &trans  &trans  &trans   &trans  &trans  &trans       &trans     &trans     &trans
                                   &trans  &trans                   &trans       &trans
             >;
+
+            label = "RSE";
         };
 
         ADJ {
@@ -113,6 +117,8 @@
                           &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans
                                                       &trans        &trans                            &trans  &trans
             >;
+
+            label = "ADJ";
         };
     };
 };
