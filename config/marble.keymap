@@ -120,7 +120,7 @@
             bindings = <
 &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &ga     &select  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &gc      &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &gc     &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                  &trans  &trans                  &trans  &trans
             >;
