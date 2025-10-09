@@ -86,8 +86,15 @@
         console_log: console_log {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp RPAR &kp SEMI &kp LEFT_ARROW &kp LEFT_ARROW>;
+            bindings = <&kp HOME &kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp END &kp RPAR &kp SEMI>;
             label = "CONSOLE_LOG";
+        };
+
+        import: import {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp I &kp M &kp P &kp O &kp R &kp T &kp SPACE &kp LBRC &kp SPACE &kp RBRC &kp SPACE &kp F &kp R &kp O &kp M &kp SPACE &kp SQT &kp SQT &kp SEMI &kp LEFT &kp LEFT_ARROW>;
+            label = "IMPORT";
         };
     };
 
@@ -132,9 +139,9 @@
 
         makro {
             bindings = <
-&trans  &trans  &trans   &trans  &todo   &trans  &trans  &trans  &trans  &console_log  &trans  &trans  &trans  &trans
-&trans  &ga     &select  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans   &gc     &trans  &trans                  &trans  &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans  &todo   &trans  &trans  &trans  &trans  &console_log  &trans  &trans   &trans  &trans
+&trans  &ga     &select  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &import  &trans  &trans
+&trans  &trans  &trans   &gc     &trans  &trans                  &trans  &trans        &trans  &trans   &trans  &trans
                 &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans
                                  &trans  &trans                  &trans  &trans
             >;
