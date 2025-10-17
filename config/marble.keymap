@@ -96,6 +96,27 @@
             bindings = <&none &kp I &kp M &kp P &kp O &kp R &kp T &kp SPACE &kp LBRC &kp SPACE &kp RBRC &kp SPACE &kp F &kp R &kp O &kp M &kp SPACE &kp SQT &kp SQT &kp SEMI &kp LEFT &kp LEFT_ARROW>;
             label = "IMPORT";
         };
+
+        typecheck: typecheck {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp P &kp N &kp P &kp M &kp SPACE &kp T &kp Y &kp P &kp E &kp C &kp H &kp E &kp C &kp K>;
+            label = "TYPECHECK";
+        };
+
+        lint: lint {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp P &kp N &kp P &kp M &kp SPACE &kp L &kp I &kp N &kp T &kp SPACE &kp MINUS &kp MINUS &kp SPACE &kp MINUS &kp MINUS &kp F &kp I &kp X>;
+            label = "LINT";
+        };
+
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp P &kp N &kp P &kp M &kp SPACE &kp T &kp E &kp S &kp T>;
+            label = "TEST";
+        };
     };
 
     keymap {
@@ -139,11 +160,11 @@
 
         makro {
             bindings = <
-&trans  &trans  &trans   &trans  &todo   &trans  &trans  &trans  &trans  &console_log  &trans  &trans   &trans  &trans
-&trans  &ga     &select  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &import  &trans  &trans
-&trans  &trans  &trans   &gc     &trans  &trans                  &trans  &trans        &trans  &trans   &trans  &trans
-                &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans
-                                 &trans  &trans                  &trans  &trans
+&trans  &trans  &trans  &lint    &todo       &trans  &trans  &trans  &trans  &console_log  &trans  &trans   &trans  &trans
+&trans  &ga     &trans  &select  &typecheck  &trans  &trans  &trans  &trans  &trans        &trans  &import  &trans  &trans
+&trans  &trans  &trans  &gc      &trans      &trans                  &test   &trans        &trans  &trans   &trans  &trans
+                &trans  &trans   &trans      &trans  &trans  &trans  &trans  &trans        &trans  &trans
+                                 &trans      &trans                  &trans  &trans
             >;
 
             label = "makro";
